@@ -12,8 +12,7 @@ function About() {
       </Typography>
       <Button
         variant="contained"
-        className="custom-button"
-        // color="primary"
+        color="secondary"
         href="#projects"
         sx={{ mt: 2 }}
       >

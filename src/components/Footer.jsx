@@ -2,9 +2,12 @@ import { Box, Typography } from "@mui/material";
 
 function Footer() {
   return (
-    <Box sx={{ py: 3, textAlign: "center", bgcolor: "grey.200", mt: 4 }}>
+    <Box sx={{ py: 3, textAlign: "center", mt: 4 }}>
       <Typography variant="body2">
-        © {new Date().getFullYear()} Anmol | Built with React & MUI
+        Built and Designed by Anmolpreet Khangura.
+      </Typography>
+      <Typography variant="body2">
+        All rights reserved © {new Date().getFullYear()}
       </Typography>
     </Box>
   );
