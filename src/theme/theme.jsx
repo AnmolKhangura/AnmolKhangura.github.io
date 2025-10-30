@@ -45,9 +45,30 @@ const getDesign = (mode) => ({
     },
   },
 
-//   shape: {
-//     borderRadius: 12,
-//   },
+  components: {
+    MuiButton: {
+      variants: [
+        {
+          props: { variant: "nav"},
+          style: ({theme}) => ({
+            color: theme.palette.text.primary,
+            "&:hover": {
+              backgroundColor: "transparent",
+              boxShadow: "none",
+              textShadow: `0 0 20px ${theme.palette.text.primary}`,
+            },
+            "&:active": {
+              transform: "scale(1.1)",
+            },
+          }),
+        },
+      ],
+    },
+  },
+
+  //   shape: {
+  //     borderRadius: 12,
+  //   },
 });
 
 export const createAppTheme = (mode) => createTheme(getDesign(mode));
