@@ -55,7 +55,7 @@ const getDesign = (mode) => ({
             "&:hover": {
               backgroundColor: "transparent",
               boxShadow: "none",
-              textShadow: `0 0 20px ${theme.palette.text.primary}`,
+              textShadow: `0 0 25px ${theme.palette.text.primary}`,
             },
             "&:active": {
               transform: "scale(1.1)",

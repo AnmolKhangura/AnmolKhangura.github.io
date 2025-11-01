@@ -2,7 +2,11 @@ import { Box, Typography, List, ListItem, ListItemText } from "@mui/material";
 
 function Experience() {
   return (
-    <Box id="experience" sx={{ py: 6 }}>
+    <Box
+      id="experience"
+      className="section"
+      sx={{ py: 6, scrollMarginTop: 64, minHeight:"calc(100vh - 64px)" }}
+    >
       <Typography variant="h4" gutterBottom>
         Experience
       </Typography>

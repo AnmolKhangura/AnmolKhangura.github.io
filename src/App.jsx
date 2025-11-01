@@ -11,8 +11,7 @@ import { Container } from "@mui/material";
 import CssBaseline from "@mui/material/CssBaseline";
 
 function App() {
-
-    // Detect system preference
+  // Detect system preference
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [mode, setMode] = useState(prefersDark ? "dark" : "light");
 
@@ -27,20 +26,18 @@ function App() {
   // Generate theme dynamically
   const theme = useMemo(() => createAppTheme(mode), [mode]);
 
-
   return (
     <>
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Navbar />
-      <Container maxWidth="md">
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
-      </Container>
-      <Footer />
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Navbar />
+        <Container maxWidth="md">
+          <About />
+          <Experience />
+          <Projects />
+        </Container>
+        <Footer />
+      </ThemeProvider>
     </>
   );
 }
