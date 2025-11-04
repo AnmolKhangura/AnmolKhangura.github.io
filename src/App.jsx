@@ -31,7 +31,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Navbar />
-        <Container maxWidth="md">
+        <Container maxWidth="lg">
           <About />
           <Experience />
           <Projects />
