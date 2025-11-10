@@ -9,8 +9,8 @@ const getDesign = (mode) => ({
           primary: { main: "#000000ff" },
           secondary: { main: "#555555" },
           background: {
-            default: "#ffffff",
-            paper: "#f9f9f9",
+            default: "#f8f8f8ff",
+            paper: "#eaeaeaff",
           },
           text: {
             primary: "#000000ff",
@@ -53,6 +53,7 @@ const getDesign = (mode) => ({
           style: ({theme}) => ({
             color: theme.palette.text.primary,
             "&:hover": {
+              cursor: "pointer",
               backgroundColor: "transparent",
               boxShadow: "none",
               textShadow: `0 0 25px ${theme.palette.text.primary}`,

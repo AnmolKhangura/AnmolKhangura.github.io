@@ -3,7 +3,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import { createAppTheme } from "./theme/theme.jsx";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
-import Projects from "./components/Projects";
+import Project from "./components/Project/Project.jsx";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -34,7 +34,7 @@ function App() {
         <Container maxWidth="lg">
           <About />
           <Experience />
-          <Projects />
+          <Project />
         </Container>
         <Footer />
       </ThemeProvider>
