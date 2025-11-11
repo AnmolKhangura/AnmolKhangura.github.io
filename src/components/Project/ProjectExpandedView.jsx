@@ -7,10 +7,10 @@ import {
   Chip,
   Fade,
   Zoom,
+  Grid,
 } from "@mui/material";
 import { Close } from "@mui/icons-material";
 import ProjectTitleList from "./ProjectTitleList";
-// import ProjectTechChips from "./ProjectTechChips";
 
 export default function ProjectExpandedView({
   project,
@@ -23,23 +23,21 @@ export default function ProjectExpandedView({
       <Box
         sx={{
           display: "flex",
-          flexDirection: { xs: "column", md: "row" },
+          flexDirection: "column",
           height: "100%",
           width: "100%",
         }}
       >
         {/* Sidebar (titles of other projects) */}
         <Box
-          sx={{
-            flexBasis: { xs: "auto", md: "20%" },
-            borderRight: { md: "1px solid rgba(255,255,255,0.1)" },
+          sx={(theme) => ({
+            borderBottom: `1px solid ${theme.palette.primary.transparent}`,
             p: 2,
             display: "flex",
-            flexDirection: { xs: "row", md: "column" },
+            flexDirection: "row",
             justifyContent: "center",
             alignItems: "center",
-            gap: 2,
-          }}
+          })}
         >
           <ProjectTitleList
             projects={projects}
@@ -52,11 +50,12 @@ export default function ProjectExpandedView({
         <Box
           sx={{
             flexGrow: 1,
-            p: { xs: 3, md: 6 },
+            p: { xs: 3, md: 2 },
             overflowY: "auto",
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
+            width: "100%",
+            // alignItems: "start",
           }}
         >
           <Box sx={{ alignSelf: "flex-end" }}>
@@ -65,76 +64,90 @@ export default function ProjectExpandedView({
             </IconButton>
           </Box>
 
-          <Typography variant="h4" sx={{ mb: 1, fontWeight: 600 }}>
-            {project.title}
-          </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-            {project.date}
-          </Typography>
-
-          {project.image && (
-            <Box
-              component="img"
-              src={project.image}
-              alt={project.title}
-              sx={{
-                width: "100%",
-                maxHeight: 360,
-                objectFit: "cover",
-                borderRadius: 3,
-                mb: 3,
-              }}
-            />
-          )}
-
-          <Typography
-            variant="body1"
-            sx={{ mb: 3, textAlign: "center", maxWidth: 800 }}
-          >
-            {project.description}
-          </Typography>
-
-          {/* <ProjectTechChips tech={project.tech} /> */}
-          <Stack direction="row" flexWrap="wrap" gap={1}>
-            {project.tech.map((tech, i) => (
-              <Zoom
-                in
-                key={`tech-chip-${i}`}
-                timeout={300}
-                style={{ transitionDelay: `${(i + 1) * 120}ms` }}
-              >
-                <Chip
-                  label={tech}
-                  variant="outlined"
+          <Grid container spacing={2}>
+            <Grid size={{ xs: 12, md: 5 }} sx={{
+              display: "flex",
+              justifyContent: "center",
+              width: "100%",
+            }}>
+              {project.image && (
+                <Box
+                  component="img"
+                  src={project.image}
+                  alt={project.title}
                   sx={{
-                    fontWeight: 500,
-                    color: "text.primary",
+                    width: "100%",
+                    maxHeight: 400,
+                    // objectFit: "cover",
+                    objectFit: "contain",
+                    borderRadius: 3,
+                    // mb: 3,
                   }}
                 />
-              </Zoom>
-            ))}
-          </Stack>
+              )}
+            </Grid>
+            <Grid size={{ xs: 12, md: 7 }}
+              sx={{ width: "100%" }}
+            >
+              <Box>
+                <Typography variant="h6" sx={{ mb: 1, fontWeight: 600 }}>
+                  {project.title}
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{ mb: 3 }}
+                >
+                  {project.date}
+                </Typography>
 
-          <Stack direction="row" spacing={2} sx={{ mt: 4 }}>
-            {project.github && (
-              <Button
-                variant="outlined"
-                href={project.github}
-                target="_blank"
-              >
-                GitHub
-              </Button>
-            )}
-            {project.live && (
-              <Button
-                variant="contained"
-                href={project.live}
-                target="_blank"
-              >
-                Live Site
-              </Button>
-            )}
-          </Stack>
+                <Typography variant="body1" sx={{ mb: 3, maxWidth: 800 }}>
+                  {project.description}
+                </Typography>
+
+                <Stack direction="row" flexWrap="wrap" gap={1}>
+                  {project.tech.map((tech, i) => (
+                    <Zoom
+                      in
+                      key={`tech-chip-${i}`}
+                      timeout={300}
+                      style={{ transitionDelay: `${(i + 1) * 120}ms` }}
+                    >
+                      <Chip
+                        label={tech}
+                        variant="outlined"
+                        sx={{
+                          fontWeight: 500,
+                          color: "text.primary",
+                        }}
+                      />
+                    </Zoom>
+                  ))}
+                </Stack>
+
+                <Stack direction="row" spacing={2} sx={{ mt: 4 }}>
+                  {project.github && (
+                    <Button
+                      variant="outlined"
+                      href={project.github}
+                      target="_blank"
+                    >
+                      GitHub
+                    </Button>
+                  )}
+                  {project.live && (
+                    <Button
+                      variant="contained"
+                      href={project.live}
+                      target="_blank"
+                    >
+                      Live Site
+                    </Button>
+                  )}
+                </Stack>
+              </Box>
+            </Grid>
+          </Grid>
         </Box>
       </Box>
     </Fade>

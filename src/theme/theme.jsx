@@ -18,8 +18,8 @@ const getDesign = (mode) => ({
           },
         }
       : {
-          primary: { main: "#ffffffff" },
-          secondary: { main: "#cccccc" },
+          primary: { main: "#ffffffff", transparent: "#ffffff1a"},
+          secondary: { main: "#cccccc"},
           background: {
             default: "#242424",
             paper: "#2e2e2e",
@@ -49,8 +49,8 @@ const getDesign = (mode) => ({
     MuiButton: {
       variants: [
         {
-          props: { variant: "nav"},
-          style: ({theme}) => ({
+          props: { variant: "nav" },
+          style: ({ theme }) => ({
             color: theme.palette.text.primary,
             "&:hover": {
               cursor: "pointer",

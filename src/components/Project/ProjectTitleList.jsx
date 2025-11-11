@@ -5,8 +5,8 @@ export default function ProjectTitleList({ projects, activeId, onSelect }) {
     <Box
       sx={{
         display: "flex",
-        flexDirection: { xs: "row", md: "column" },
-        gap: 2,
+        flexDirection: "inherit",
+        gap: 4,
         justifyContent: "center",
         alignItems: "center",
         width: "100%",

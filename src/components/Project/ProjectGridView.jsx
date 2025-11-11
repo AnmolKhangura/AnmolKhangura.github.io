@@ -87,9 +87,9 @@ export default function ProjectGridView({ projects, onSelect }) {
                 >
                   {project.shortDesc}
                 </Typography>
-                <Typography variant="caption" color="text.secondary">
+                {/* <Typography variant="caption" color="text.secondary">
                   {project.date}
-                </Typography>
+                </Typography> */}
               </CardContent>
               <CardActions sx={{ mt: "auto", mb: 3, justifyContent: "center" }}>
                 <Stack
