@@ -11,6 +11,7 @@ function About() {
       className="section"
       sx={{
         pt: "15vh",
+        pb: 6,
         textAlign: "center",
         scrollMarginTop: 64,
         minHeight: "calc(100vh - 64px)",
@@ -31,7 +32,7 @@ function About() {
 
       <Box sx={{ maxWidth: 800, mx: "auto", mt: 4 }}>
         <Typography variant="body1" color="text.secondary">
-          I'm a fourth-year Computer Science student who loves exploring how
+          I'm a final year Computer Science student who loves exploring how
           things work under the hood — not to rebuild everything from scratch,
           but to truly understand how and why it works. I enjoy learning new
           technologies by experimenting, breaking things, and trying out
@@ -44,6 +45,7 @@ function About() {
       <Box
         sx={{
           mt: 3,
+          mb: 4,
           maxWidth: 200,
           display: "flex",
           justifyContent: "space-around",
