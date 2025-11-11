@@ -35,8 +35,8 @@ const projects = [
     id: 3,
     title: "Vamoose!",
     date: "May 2024 - Aug 2024",
-    github: "https://github.com/example/vamoose",
-    live: "https://vamoose.app",
+    // github: "https://github.com/example/vamoose",
+    // live: "https://vamoose.app",
     shortDesc:
       "A group trip planning web app with real-time chat and itinerary builder.",
     description:
@@ -44,7 +44,58 @@ const projects = [
     image: "/images/vamoose.png",
     tech: ["React", "Next.js", "Express", "PostgreSQL", "MongoDB"],
   },
-  
+    {
+    id: 4,
+    title: "Vamoose!",
+    date: "May 2024 - Aug 2024",
+    // github: "https://github.com/example/vamoose",
+    // live: "https://vamoose.app",
+    shortDesc:
+      "A group trip planning web app with real-time chat and itinerary builder.",
+    description:
+      "Vamoose! helps groups plan trips collaboratively. It features real-time chat, expense tracking, interactive maps, and itinerary management. Built with React, Next.js, Node, Express, PostgreSQL (Prisma), and MongoDB (Mongoose).",
+    image: "/images/vamoose.png",
+    tech: ["React", "Next.js", "Express", "PostgreSQL", "MongoDB"],
+  },
+    {
+    id: 5,
+    title: "Vamoose!",
+    date: "May 2024 - Aug 2024",
+    // github: "https://github.com/example/vamoose",
+    // live: "https://vamoose.app",
+    shortDesc:
+      "A group trip planning web app with real-time chat and itinerary builder.",
+    description:
+      "Vamoose! helps groups plan trips collaboratively. It features real-time chat, expense tracking, interactive maps, and itinerary management. Built with React, Next.js, Node, Express, PostgreSQL (Prisma), and MongoDB (Mongoose).",
+    image: "/images/vamoose.png",
+    tech: ["React", "Next.js", "Express", "PostgreSQL", "MongoDB"],
+  },
+      {
+    id: 6,
+    title: "Vamoose!",
+    date: "May 2024 - Aug 2024",
+    // github: "https://github.com/example/vamoose",
+    // live: "https://vamoose.app",
+    shortDesc:
+      "A group trip planning web app with real-time chat and itinerary builder.",
+    description:
+      "Vamoose! helps groups plan trips collaboratively. It features real-time chat, expense tracking, interactive maps, and itinerary management. Built with React, Next.js, Node, Express, PostgreSQL (Prisma), and MongoDB (Mongoose).",
+    image: "/images/vamoose.png",
+    tech: ["React", "Next.js", "Express", "PostgreSQL", "MongoDB"],
+  },
+      {
+    id: 7,
+    title: "Vamoose!",
+    date: "May 2024 - Aug 2024",
+    // github: "https://github.com/example/vamoose",
+    // live: "https://vamoose.app",
+    shortDesc:
+      "A group trip planning web app with real-time chat and itinerary builder.",
+    description:
+      "Vamoose! helps groups plan trips collaboratively. It features real-time chat, expense tracking, interactive maps, and itinerary management. Built with React, Next.js, Node, Express, PostgreSQL (Prisma), and MongoDB (Mongoose).",
+    image: "/images/vamoose.png",
+    tech: ["React", "Next.js", "Express", "PostgreSQL", "MongoDB"],
+  },
   // add more projects here...
 ];
 function Projects() {
@@ -59,7 +110,7 @@ function Projects() {
       className="section"
       sx={{ py: 6, scrollMarginTop: 64, minHeight: "calc(100vh - 64px)" }}
     >
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h4" gutterBottom sx={{ mb: 3 }}>
         Projects
       </Typography>
 
