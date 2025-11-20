@@ -31,35 +31,36 @@ function Experience() {
       company: "G3",
       period: "Jan 2024 - Apr 2025",
       description: [
-        "Designed, developed, and implemented 80+ public-facing e-forms.",
-        "Focused on accessibility, responsive design, and usability.",
-        "Collaborated with 20+ clients to gather and refine requirements. Collaborated with 20+ clients to gather and refine requirements.",
-        "Collaborated with 20+ clients to gather and refine requirements.",
-        "Collaborated with 20+ clients to gather and refine requirements.",
+        "Working as a full-stack developer on internal tools using React, Redux, and ServiceNow (server-side JS, REST APIs, data modeling).",
+        "Leading the team's automated UI testing effort using Katalon and defining a scalable, data-driven testing strategy.",
+        "Built a data-driven testing framework in Katalon using Groovy, enabling QA to manage all test scenarios through an Excel workbook and automatically generate JSON for execution.",
+        "Developed reusable object oriented Groovy modules that allow the automation suite to scale without creating new scripts for each scenario, improving maintainability and reducing duplication.",
       ],
-      tech: ["HTML", "CSS", "JavaScript", "jQuery"],
+      tech: ["JavaScript", "React", "Redux", "ServiceNow", "REST APIs", "Groovy", "Katalon Studio", "Excel Automation", "Object Oriented Programming", "Data-Driven Testing"],
     },
     {
       title: "Junior Web & Application Developer",
       company: "Government of Manitoba",
       period: "Jan 2024 - Apr 2025",
       description: [
-        "Designed, developed, and implemented 80+ public-facing e-forms.",
-        "Focused on accessibility, responsive design, and usability.",
-        "Collaborated with 20+ clients to gather and refine requirements.",
+        "Built 80+ public-facing e-forms for different departments using HTML, CSS, JavaScript, and jQuery, focusing on responsive and accessible design.",
+        "Worked closely with 20+ clients to understand requirements, improve workflows, and make forms easier and more intuitive for users.",
+        "Created reusable JavaScript/jQuery modules that were shared across many forms, helping reduce repeated code and speeding up development for the team.",
+        "Developed a prototype backend application for the E-Forms system using Node.js + Express with an MVC structure to manage dynamic form submissions."
       ],
-      tech: ["HTML", "CSS", "JavaScript", "jQuery"],
+      tech: ["HTML", "CSS", "JavaScript", "jQuery", "Node.js", "Express", "MVC Architecture"],
     },
     {
       title: "Undergraduate Research Assistant",
       company: "University of Manitoba",
-      period: "May 2024 - Aug 2024",
+      period: "May 2023 - Aug 2023",
       description: [
-        "Developed an Android app for simplified group travel planning.",
-        "Implemented a relational database and applied TDD with JUnit.",
-        "Worked in an agile team environment using GitLab for version control.",
+        "Designed and developed three prototype banking interfaces focused on helping older adults set up proxy accounts for trusted contacts.",
+        "Started with paper and digital prototyping, then transformed the designs into functional interfaces using Angular (HTML, CSS, TypeScript).",
+        "Conducted usability testing with older adults to understand their needs, pain points, and preferences when navigating digital banking tasks.",
+        "Learned how user-centered design and accessibility play a major role in building interfaces that are intuitive, supportive, and easy to use for all age groups."
       ],
-      tech: ["Java", "Android Studio", "JUnit", "GitLab"],
+      tech: ["Angular", "HTML", "CSS", "TypeScript", "User-Centered Design"],
     },
   ];
 
@@ -76,7 +77,7 @@ function Experience() {
       <Grid container spacing={1} alignItems="center">
         <Grid
           item
-          size={{ xs: 12, md: 4 }}
+          size={{ xs: 12, md: 3 }}
           sx={{
             display: "flex",
             justifyContent: { xs: "center", md: "flex-center" },
@@ -140,7 +141,7 @@ function Experience() {
         </Grid>
 
         {/* selected experience details */}
-        <Grid item size={{ xs: 12, md: 8 }}>
+        <Grid item size={{ xs: 12, md: 9 }}>
           <Fade in timeout={1000} key={selected}>
             <Paper
               // variant="outlined"
