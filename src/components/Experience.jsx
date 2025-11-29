@@ -27,7 +27,7 @@ function Experience() {
 
   const experiences = [
     {
-      title: "Developer",
+      title: "Junior Developer Intern",
       company: "G3",
       period: "Jan 2024 - Apr 2025",
       description: [
@@ -39,7 +39,7 @@ function Experience() {
       tech: ["JavaScript", "React", "Redux", "ServiceNow", "REST APIs", "Groovy", "Katalon Studio", "Excel Automation", "Object Oriented Programming", "Data-Driven Testing"],
     },
     {
-      title: "Junior Web & Application Developer",
+      title: "Junior Web Developer Intern",
       company: "Government of Manitoba",
       period: "Jan 2024 - Apr 2025",
       description: [
