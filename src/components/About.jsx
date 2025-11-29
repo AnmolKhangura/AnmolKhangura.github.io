@@ -54,15 +54,15 @@ function About() {
       >
         {[
           {
-            href: "https://github.com/yourusername",
+            href: "https://github.com/AnmolKhangura",
             icon: <GitHubIcon fontSize="large" />,
           },
           {
-            href: "https://linkedin.com/in/yourusername",
+            href: "https://www.linkedin.com/in/anmolpreet-khangura/",
             icon: <LinkedInIcon fontSize="large" />,
           },
           {
-            href: "mailto:your@email.com",
+            href: "mailto:khangura@myumanitoba.ca",
             icon: <EmailIcon fontSize="large" />,
           },
         ].map(({ href, icon }) => (
