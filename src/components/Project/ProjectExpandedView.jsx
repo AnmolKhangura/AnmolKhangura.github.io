@@ -93,15 +93,15 @@ export default function ProjectExpandedView({
                 <Typography variant="h6" sx={{ mb: 1, fontWeight: 600 }}>
                   {project.title}
                 </Typography>
-                <Typography
+                {/* <Typography
                   variant="body2"
                   color="text.secondary"
                   sx={{ mb: 3 }}
                 >
                   {project.date}
-                </Typography>
+                </Typography> */}
 
-                <Typography variant="body1" sx={{ mb: 3, maxWidth: 800 }}>
+                <Typography variant="body1" sx={{ mb: 3, maxWidth: 800, whiteSpace: "pre-line"}}>
                   {project.description}
                 </Typography>
 
