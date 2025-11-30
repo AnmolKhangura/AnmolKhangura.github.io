@@ -29,7 +29,7 @@ function Experience() {
     {
       title: "Junior Developer Intern",
       company: "G3",
-      period: "Jan 2024 - Apr 2025",
+      period: "May 2025 - Present",
       description: [
         "Working as a full-stack developer on internal tools using React, Redux, and ServiceNow (server-side JS, REST APIs, data modeling).",
         "Leading the team's automated UI testing effort using Katalon and defining a scalable, data-driven testing strategy.",
