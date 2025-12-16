@@ -27,7 +27,7 @@ function Experience() {
 
   const experiences = [
     {
-      title: "Junior Developer Intern",
+      title: "Software Developer Intern",
       company: "G3",
       period: "May 2025 - Present",
       description: [
